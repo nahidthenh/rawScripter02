@@ -46,6 +46,7 @@ body {
 	padding: 10px;
 	white-space: nowrap;
 	text-transform: uppercase;
+	color: hsla(0,0%,100%,.7);
 }
 .midel-wraper{
     background-color: #7289DA;
