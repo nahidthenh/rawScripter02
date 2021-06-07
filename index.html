@@ -39,7 +39,7 @@
                 <div class="section-button-area">
                     <div class="btn-country">
                         <form>
-                            <select name="cars" class="custom-select">
+                            <select name="cars" class="select">
                                 <option selected>Country</option>
                                 <option value="Bangladesh">Bangladesh</option>
                                 <option value="India">India</option>
@@ -50,7 +50,7 @@
                     </div>
                     <div class="btn-quantity">
                         <form>
-                            <select name="cars" class="custom-select">
+                            <select name="cars" class=" select">
                                 <option selected>Quantity</option>
                                 <option value="5GB">5GB</option>
                                 <option value="6GB">6GB</option>
@@ -197,32 +197,12 @@
                                             <td>30 November 2021</td>
                                             <td>Larg pack</td>
                                         </tr>
-                                        <tr class="spacer">
-                                            <td colspan="100"></td>
-                                        </tr>
-
-                                        <tr scope="row">
-                                            <th scope="row">
-                                                <label class="control control--checkbox">
-                                                    <input type="checkbox" />
-                                                    <div class="control__indicator"></div>
-                                                </label>
-                                            </th>
-                                            <td>
-                                                NHD15
-                                            </td>
-                                            <td><a href="#">10GB Data Pack</a></td>
-                                            <td>
-                                                13 April 2021
-                                                <!-- <small class="d-block"></small> -->
-                                            </td>
-                                            <td>30 November 2021</td>
-                                            <td>Larg pack</td>
-                                        </tr>
+                                        
                                     </tbody>
                                 </table>
-                                <ul class="pagination">
-                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+                                <ul class="pagination mt-3">
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a>
+                                    </li>
                                     <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
                                     <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
                                     <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
@@ -233,8 +213,10 @@
                             <!-- Table  -->
                         </div>
                         <div class="midle-btn mt-5">
-                            <button class="btn btn-info mr-2" type="button"> <i class="fa fa-copy"></i> Copy</button>
-                            <button class="btn btn-info" type="button"> <i class="fa fa-download"></i> Download Proxes</button>
+                            <button class="btn btn-info mr-3" type="button"> <i class="fa fa-copy"></i> Copy</button>
+                            <button class="btn btn-info" type="button"> <i class="fa fa-download"></i> Download
+                                Proxes</button>
+                               
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -248,15 +230,17 @@
                                 <p class="data-show">30 GB</p>
                                 <p class="data-remaning-message">Data Remaining</p>
                             </div> -->
-                            <div class="progres-bar box-cricle" data-percent="95" data-duration="1000" data-color="#ccc,#17a2b8">
+                            <div class="progres-bar box-cricle" data-percent="70" data-duration="1000" data-color="#29292B,#CDCFCE">
                                 
                             </div>
                             <h3>data remaining</h3>
 
+                           
+
                             <!-- <p class="data-remaning-message">Data Remaining</p> -->
                             <div class="buy-data mt-3">
                                 <form>
-                                    <select name="cars" class="custom-select">
+                                    <select name="cars" class="select">
                                         <option selected>Purchase</option>
                                         <option value="10GB">10GB</option>
                                         <option value="15GB">15GB</option>
@@ -294,11 +278,14 @@
     <!-- jQuery-plugin-progressbar.js -->
     <script src="jQuery-plugin-progressbar.js"></script>
 
-<script>
-    $(".progres-bar").loading();
-    
-</script>
-    
+
+
+    <script>
+        $(".progres-bar").loading();
+
+
+    </script>
+
 </body>
 
 </html>

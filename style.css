@@ -2,22 +2,22 @@
 	margin: 0px;
 	padding: 0px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
 body {
-	background: #2C2F33 !important;
+	background: #242528 !important;
 	color: #fff !important;
-	font-family: 'Lato', sans-serif !important;
+	font-family: 'Poppins', sans-serif !important;
 }
 .sidenav {
-	background: #2A2A2E;
+	background: #29292B;
 	height: 100%;
-  position: fixed;
-  width: 16%;
+	position: fixed;
+	width: 16%;
 }
 .sidenav a {
 	padding: 10px;
 	font-size: 25px;
-	color: #fff;
+	color: #CDCFCE;
 	display: block;
 	text-decoration: none !important;
 	user-select: none;
@@ -55,15 +55,14 @@ body {
 	color: hsla(0,0%,100%,.7);
 }
 .midel-wraper {
-	background-color: #000;
-	padding: 20px;
-	border-radius: 10px;
+	background-color: #29292B;
+	padding: 10px;
 }
 .data-remaing-section h3 {
 	padding-top: 18px;
 	text-transform: capitalize;
-	font-size: 22px;
-	color: #17a2b8;
+	font-size: 18px;
+	color: #CBCDCC;
 	text-align: center;
 }
 .box-cricle {
@@ -97,10 +96,10 @@ body {
 	font-size: 16px !important;
 }
 .data-remaing-section {
-	background: #0000ff2e;
+	background: #29292B;
 	padding: 100px 0px;
-	border-radius: 10px;
-	border: 1px solid #7289da;
+	/* border-radius: 10px; */
+	/* border: 1px solid #7289da; */
 	display: grid;
 }
 .custom-select {
@@ -113,24 +112,83 @@ body {
 	line-height: 1.5;
 	color: #495057;
 	vertical-align: middle;
-	background: #7289da url("http://cdn.onlinewebfonts.com/svg/img_295694.svg") no-repeat right 0.75rem center/8px 10px !important;
-	border: 1px solid #7289da !important;
+	background: url("http://cdn.onlinewebfonts.com/svg/img_295694.svg") no-repeat right 0.75rem center/8px 10px !important;
+	border: 1px solid #CDCFCE !important;
 	border-radius: .25rem;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 	color: #fff !important;
 	cursor: pointer;
+	padding: 6px 25px !important;
+border-radius: 0px !important;
 }
-.buy-data .custom-select{
+select {
+	word-wrap: normal;
+	background: none;
+	color: #fff;
+	padding: 8px 25px;
+	display: inline-block;
+	width: 100%;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem 1.75rem .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	vertical-align: middle;
+	
+	border: 1px solid #CDCFCE !important;
+	border-radius: .25rem;
+	
+	color: #fff !important;
+	cursor: pointer;
+	padding: 6px 25px !important;
+border-radius: 0px !important;
+}
+/* .buy-data .custom-select{
 	background: #17a2b8 url("http://cdn.onlinewebfonts.com/svg/img_295694.svg") no-repeat right 0.75rem center/8px 10px !important;
 border: 1px solid #17a2b8 !important;
-}
+} */
 .section-button-area {
 	display: flex;
 	padding: 50px 0px;
 }
+.btn-info {
+	color: #fff;
+	background:none !important;
+	border-color: #cdcfce !important;
+	padding: 6px 25px !important;
+	border-radius: 0px !important;
+}
+.page-link {
 
+	color: #cdcfce !important;
+	background-color: #29292b !important;
+	border: 1px solid #655e54 !important;
+}
+.btn-info.focus, .btn-info:focus {
+	color: #fff;
+	background-color: #138496;
+	border-color: #117a8b;
+	box-shadow: 0 0 0 .2rem rgb(101, 94, 84) !important;
+}
+.custom-select:focus {
+	border-color: #80bdff;
+	outline: 0;
+	box-shadow: 0 0 0 .2rem rgb(101, 94, 84) !important;
+}
+.page-link:focus {
+	z-index: 3;
+	outline: 0;
+	box-shadow: 0 0 0 .2rem rgb(101, 94, 84) !important;
+}
+.btn-generate button {
+	background: none !important;
+	border: 1px solid #CDCFCE;
+	padding: 6px 25px;
+	border-radius: 0;
+}
 .btn-quantity {
 	/* width: 15%; */
 	margin-left: 10px;
@@ -152,10 +210,12 @@ border: 1px solid #17a2b8 !important;
 
 .custom-table {
 	min-width: 900px; }
-	.custom-table thead tr, .custom-table thead th {
-	  border-top: none;
-	  border-bottom: none !important;
-	  color: #fff; }
+
+.custom-table thead tr, .custom-table thead th {
+		border-top: none;
+		border-bottom: none !important;
+		color: #CDCFCE;
+}
 	.custom-table tbody th, .custom-table tbody td {
 	  color: #777;
 	  font-weight: 400;
@@ -165,23 +225,30 @@ border: 1px solid #17a2b8 !important;
 	  .custom-table tbody th small, .custom-table tbody td small {
 		color: #b3b3b3;
 		font-weight: 300; }
-	.custom-table tbody tr:not(.spacer) {
-	  border-radius: 7px;
-	  overflow: hidden;
-	  -webkit-transition: .3s all ease;
-	  -o-transition: .3s all ease;
-	  transition: .3s all ease; }
+		.custom-table tbody tr:not(.spacer) {
+			border-radius: 7px;
+			overflow: hidden;
+			-webkit-transition: .3s all ease;
+			-o-transition: .3s all ease;
+			transition: .3s all ease;
+			border-bottom: 1px solid #5A544C !important;
+		}
+		thead {
+			border-bottom: 1px solid #5A544C;
+		}
 	  .custom-table tbody tr:not(.spacer):hover {
 		-webkit-box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.1);
 		box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.1); }
 	.custom-table tbody tr th, .custom-table tbody tr td {
-	  background: #25252b;
+	  /* background: #25252b; */
 	  border: none;
 	  -webkit-transition: .3s all ease;
 	  -o-transition: .3s all ease;
 	  transition: .3s all ease; }
 	  .custom-table tbody tr th a, .custom-table tbody tr td a {
-		color: #b3b3b3; }
+		color: #b3b3b3;
+		text-decoration: none !important;
+	}
 	  .custom-table tbody tr th:first-child, .custom-table tbody tr td:first-child {
 		border-top-left-radius: 0px;
 		border-bottom-left-radius: 0px; }
@@ -193,9 +260,10 @@ border: 1px solid #17a2b8 !important;
 	  height: 3px;
 	  border-radius: 0 !important;
 	  background: transparent !important; }
-	.custom-table tbody tr.active th, .custom-table tbody tr.active td, .custom-table tbody tr:hover th, .custom-table tbody tr:hover td {
-	  color: #fff;
-	  background: #2e2e36; }
+	  .custom-table tbody tr.active th, .custom-table tbody tr.active td, .custom-table tbody tr:hover th, .custom-table tbody tr:hover td {
+		color: #fff;
+		background: #242528;
+	}
 	  .custom-table tbody tr.active th a, .custom-table tbody tr.active td a, .custom-table tbody tr:hover th a, .custom-table tbody tr:hover td a {
 		color: #fff; }
   
@@ -262,5 +330,10 @@ border: 1px solid #17a2b8 !important;
   .control--checkbox input:disabled:checked ~ .control__indicator {
 	background-color: #007bff;
 	opacity: .2;
-	border: 2px solid #007bff; }
-  
+	border: 2px solid #007bff; 
+}
+
+
+
+
+
