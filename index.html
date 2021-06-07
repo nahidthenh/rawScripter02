@@ -11,9 +11,11 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+    <link rel="stylesheet" href="jQuery-plugin-progressbar.css">
+    <link rel="stylesheet" href="font.css">
     <!-- Main css  -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="font.css">
 
 </head>
 
@@ -229,10 +231,20 @@
                     </div>
                     <div class="col-md-4">
                         <div class="data-remaing-section">
-                            <div class="box-cricle">
+                            <!-- <div class="box-cricle">
                                 <p class="data-show">30 GB</p>
                                 <p class="data-remaning-message">Data Remaining</p>
+                            </div> -->
+
+                            <!-- <div class="box-cricle">
+                                <p class="data-show">30 GB</p>
+                                <p class="data-remaning-message">Data Remaining</p>
+                            </div> -->
+                            <div class="progres-bar box-cricle" data-percent="95" data-duration="1000" data-color="#ccc,#17a2b8">
+                                
                             </div>
+                            <h3>data remaining</h3>
+
                             <!-- <p class="data-remaning-message">Data Remaining</p> -->
                             <div class="buy-data mt-3">
                                 <form>
@@ -270,6 +282,15 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- jQuery-plugin-progressbar.js -->
+    <script src="jQuery-plugin-progressbar.js"></script>
+
+<script>
+    $(".progres-bar").loading();
+    
+</script>
+    
 </body>
 
 </html>

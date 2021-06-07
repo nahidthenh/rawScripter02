@@ -59,8 +59,15 @@ body {
 	padding: 20px;
 	border-radius: 10px;
 }
+.data-remaing-section h3 {
+	padding-top: 18px;
+	text-transform: capitalize;
+	font-size: 22px;
+	color: #17a2b8;
+	text-align: center;
+}
 .box-cricle {
-	border: 5px solid #17a2b8;
+	/* border: 5px solid #17a2b8; */
 	text-align: center;
 	border-radius: 50%;
 	height: 200px;
@@ -77,6 +84,7 @@ body {
 	color: #17a2b8;
 	/* font-weight: bold; */
 }
+
 .data-remaing-section{
 	text-align: center;
 }
