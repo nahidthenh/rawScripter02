@@ -10,10 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
     <link rel="stylesheet" href="jQuery-plugin-progressbar.css">
-    <link rel="stylesheet" href="font.css">
     <!-- Main css  -->
     <link rel="stylesheet" href="style.css">
 
@@ -27,57 +24,22 @@
     <div class="container-fluid m-0 p-0">
         <div class="row m-0 p-0">
             <div class="col-md-2 m-0 p-0">
+                <!-- Sidebar  -->
 
 
 
-                <!-- <div class="area"></div> -->
-                <nav class="main-menu">
+                <nav class="menu" tabindex="0">
+                    <div class="smartphone-menu-trigger"></div>
                     <ul>
-                        <li>
-                            <a href="http://justinfarrow.com">
-                                <i class="fa fa-database fas fa-2x"></i>
-                                <span class="nav-text">
-                                    Premium ISP
-                                </span>
-                            </a>
-                          
+                        <li tabindex="0" class="icon-customers"><i class="fa fa-database"></i><span>Premium ISP</span>
                         </li>
-                      
-                        <li class="has-subnav">
-                            <a href="#">
-                               <i class="fa fa-home fas  fa-2x"></i>
-                                <span class="nav-text">
-                                    Resedential
-                                </span>
-                            </a>
-                           
-                        </li>
-                      
-                    </ul>
-        
-                    <ul class="logout">
-                        <li>
-                           <a href="#">
-                                 <i class="fa fa-power-off fas fa-2x"></i>
-                                <span class="nav-text">
-                                    Logout
-                                </span>
-                            </a>
-                        </li>  
+                        <li tabindex="0" class="icon-customers "><i class="fa fa-home"></i><span>Residential</span></li>
+                        <li tabindex="0" class="icon-customers"><i class="fa fa-user"></i><span>Log Out</span></li>
                     </ul>
                 </nav>
 
 
 
-
-
-
-                <!-- <div class="sidenav">
-                    <h3 class="menu-title">Bash Proxy</h3>
-                    <a href="#"> <i class="fa fa-database"></i> Premium ISP</a>
-                    <a href="#"> <i class="fa fa-home"></i> Residential</a>
-                    <a href="#"> <i class="fa fa-user"></i> Logout</a>
-                </div> -->
             </div>
             <div class="col-md-10">
                 <div class="section-button-area">
@@ -109,7 +71,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-12 col-xl-8">
                         <div class="midel-wraper">
                             <!-- <h3 class="text-center">No Results</h3> -->
                             <!-- table  -->
@@ -241,7 +203,7 @@
                                             <td>30 November 2021</td>
                                             <td>Larg pack</td>
                                         </tr>
-                                        
+
                                     </tbody>
                                 </table>
                                 <ul class="pagination mt-3">
@@ -258,28 +220,21 @@
                         </div>
                         <div class="midle-btn mt-5 mb-5">
                             <button class="btn btn-info mr-3" type="button"> <i class="fa fa-copy"></i> Copy</button>
-                            <button class="btn btn-info" type="button"> <i class="fa fa-download"></i> Download
+                            <button class="btn btn-info mt1" type="button"> <i class="fa fa-download"></i> Download
                                 Proxes</button>
-                               
+
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-12 col-xl-4">
                         <div class="data-remaing-section">
-                            <!-- <div class="box-cricle">
-                                <p class="data-show">30 GB</p>
-                                <p class="data-remaning-message">Data Remaining</p>
-                            </div> -->
+                           
+                            <div class="progres-bar box-cricle" data-percent="70" data-duration="1000"
+                                data-color="#29292B,#CDCFCE">
 
-                            <!-- <div class="box-cricle">
-                                <p class="data-show">30 GB</p>
-                                <p class="data-remaning-message">Data Remaining</p>
-                            </div> -->
-                            <div class="progres-bar box-cricle" data-percent="70" data-duration="1000" data-color="#29292B,#CDCFCE">
-                                
                             </div>
                             <h3>data remaining</h3>
 
-                           
+
 
                             <!-- <p class="data-remaning-message">Data Remaining</p> -->
                             <div class="buy-data mt-3">
@@ -326,8 +281,11 @@
 
     <script>
         $(".progres-bar").loading();
-
-
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
     </script>
 
 </body>
